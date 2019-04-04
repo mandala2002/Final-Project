@@ -1,0 +1,401 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;;
+}
+
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+   background-color: white;
+}
+
+.head{
+  position: fixed; 
+  width: 100%
+}
+
+header {
+  background: #fff;
+  color: #EBEBD3;
+  padding: 1em 0;
+  position: relative;
+  height: 70px;
+  border-bottom: 1px solid lightgray;
+  z-index: 99999;
+
+}
+
+header::after {
+  content: '';
+  clear: both;
+  display: block;
+  position: fixed;
+}
+
+.logo {
+  float: left;
+  font-size: 1rem;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: darkgreen;
+  padding-top: 7px;
+}
+
+.logo span {
+  font-weight: 400;
+}
+
+.site-nav {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  background: #464655;
+  clip-path: circle(0px at top right);
+  transition: clip-path ease-in-out 700ms;
+  font-size: 12px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  /*   display: none; */
+}
+
+.site-nav--open {
+  clip-path: circle(600% at top right);
+  /*   display: block; */
+}
+
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+}
+
+.site-nav li {
+  border-bottom: 1px solid #575766;
+}
+
+.site-nav li:last-child {
+  border-bottom: none;
+}
+
+.site-nav a {
+  color: #000;
+  display: block;
+  padding: 2em 4em 2em 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  background: #E4B363;
+  color: lightblue;
+}
+
+.site-nav--icon {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-right: 1em;
+  width: 1.1em;
+  text-align: right;
+  color: rgba(255, 255, 255, .4);
+}
+
+.menu-toggle {
+  padding: 1em;
+  position: absolute;
+  top: .5em;
+  right: .5em;
+  cursor: pointer;
+  background-color:##18b696; 
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  background: #000;
+  height: 3px;
+  width: 1.75em;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.open .hamburger {
+  transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+  opacity: 0;
+}
+
+.open .hamburger::after {
+  transform: translateY(-3px) rotate(-90deg);
+}
+
+
+.bloger{
+  background: url(beach-chairs-clouds-hotel-338504.jpg)no-repeat;
+  width:100%;
+  background-size: 100% 100%;
+  height: 600px;
+  padding-top: 250px;
+  text-align: center;
+  color: white;
+}
+
+.bloger h2{
+   margin-top: 75px
+  }
+  
+.about{
+  text-align: center;
+  padding-top: 50px;
+}
+.about p{
+  padding-top: 20px;
+}
+.us{
+  max-width: 1300px;
+  /*margin-left: 100px;*/
+  padding-top: 30px;
+}
+.us p{
+  padding-top: 30px;
+}
+.text{
+  padding-top: 10px;
+  font-size: 18px;
+  color: gray;
+}
+.booking{
+  width: 100%;
+  height: 250px;
+  background: url(pexels-photo-1531672.jpeg)no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  text-align: center; 
+  margin-top: 100px;
+  background-attachment: fixed;
+}
+.booking p{
+  font-size: 20px; 
+  padding-top: 65px; 
+  padding-bottom: 30px;
+}
+.us li{
+  list-style: none;
+}
+.left{
+  background-color: green;
+  padding: 13px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+.left:hover{
+  background-color: #09ab09;
+}
+.right:hover{
+  background-color: #1414e0;
+}
+.right{
+  background-color: blue;
+  padding: 13px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+.amenities{
+  padding-top: 80px;
+  width: 80%;
+  margin-left: 10%;
+}
+.amenities h1{
+  text-align: center;
+}
+.amen{
+  display: flex;
+  width: 1100px;
+  padding-top: 30px;
+  padding-left: 
+}
+.amen i{
+  color: green;
+}
+.amen1{
+  line-height: 35px;
+  width: 30%;
+}
+.amen-pading{
+  padding-top: 50px;
+}
+.amen ul{
+  font-size: 20px;
+}
+.amen li{
+  padding-left: 20px;
+  list-style-type: none;
+  font-size: 16px;
+  color: #777;
+}
+.amen2{
+   line-height: 40px;
+  width: 30%;
+  padding-left: 40px;
+}
+.amen3{
+  line-height: 35px;
+  width: 30%;
+  padding-left: 40px;
+}
+.amen1 li{
+    list-style-type: none;
+}
+.judul{
+  font-size: 20px;
+} 
+.Image-side{
+  width: 100%;
+}
+.image {
+   width:100%; 
+   height: 200px;
+   background-size: 100% 100%;
+  }
+  .flex  {
+      display: flex;
+  }
+.flex li{
+  list-style-type: none;
+  padding-left: 50px;
+  padding-top: 8px;
+}
+
+.room{
+  background:url(pexels-photo-573552.jpeg);
+  height: 300px;
+  width:100%;
+  text-align: center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: white;
+  margin-top: 100px;
+}
+.room h1{
+  padding-top:100px; 
+  padding-bottom: 10px;
+}
+.button{
+  background-color: green;
+  padding: 13px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  display: inline-block;
+  margin-top: 30px;
+}
+.button:hover{
+  border-color: blue;
+}
+
+.footer{
+   padding: 20px; 
+   background-color: #212529;
+   color: #f2f2f2;
+   text-align: center;
+   display: flex;
+}
+.footer li{
+  color: white;
+  list-style-type: none;
+  padding-left: 40px;
+  font-size: 12px;
+}
+.footer i{
+  color: green;
+}
+.footer p{
+  padding-left: 40px;
+  font-size: 12px;
+  color: black;
+}
+.tulisan{
+  font-size: 14px;
+
+}
+@media(min-width:700px){
+
+  .image {
+   width: 20%; 
+   height: 200px;
+   padding-left: 10px;
+   float: right;
+   margin-top: 30px;
+ }
+      
+  .menu-toggle 
+    {
+    display: none;
+  }
+  @media(max-width: 400px){
+    .us{
+      max-width: 1120px;
+  margin-right: : 100px;
+  padding-top: 30px;
+    }
+  }
+  .site-nav {
+    height: auto;
+    position: relative;
+    background: transparent;
+    float: right;
+    clip-path: initial;
+  }
+  .site-nav li {
+    display: inline-block;
+    border: none;
+  }
+  .site-nav a {
+    padding: 0;
+    margin-left: 3em;
+  }
+  .site-nav a:hover,
+  .site-nav a:focus {
+    background: transparent;
+  }
+  .site-nav--icon {
+    display: none;
+  }
+}
+@media(max-width: 700){
+   .amen{
+  width: 1100px;
+  padding-top: 30px;
+  padding-left: 
+}
+.amen2{
+  float: left;
+  }
+}
